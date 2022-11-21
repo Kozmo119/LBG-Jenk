@@ -4,7 +4,7 @@ pipeline {
         stage('Run Script') {
             steps {
                 sh '''
-                chmox +x helloWorld.sh
+                chmod +x helloWorld.sh
                 ./helloWorld.sh Hi
                 '''
             }
